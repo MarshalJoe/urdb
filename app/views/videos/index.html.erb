@@ -1,0 +1,7 @@
+<ul>Awesome Movies<br></br>
+	<% @videos.each do |v| %>
+	<li><%= link_to v.title,  video_path(v.id)%></li>
+	<%= v.description %>
+	<br></br>
+	<% end %>
+</ul>
